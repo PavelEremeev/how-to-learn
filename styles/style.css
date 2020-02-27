@@ -66,6 +66,12 @@
     color: #2F80ED;
     font-size: 18px;
     text-decoration: none;
+    transition: all linear .3s
+}
+
+.header__link:hover {
+    opacity: 1;
+    color: #000000;
 }
 
 .header__main-illustration {
@@ -231,6 +237,13 @@
     text-decoration: none;
     color: #000000;
     z-index: 3;
+    transition: all linear .3s
+}
+
+
+.feinman__link:hover {
+    opacity: 1;
+    color: #2F80ED;
 }
 
 .feinman {
@@ -240,7 +253,7 @@
     background-color: #F2F2F2;
     height: 790px;
 }
-.feinman-img {
+.feinman__img {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -338,11 +351,13 @@
 .footer__column_content_info {
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 .footer__column_content_social {
     display: flex;
     flex-direction: column;
+    width: auto;
 
 }
 
@@ -372,11 +387,19 @@
 }
 
 .footer__column-links {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+}
+
+.footer__column-link {
     color: white;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
     text-decoration: none;
+    margin-top: 0;
+    transition: all linear .3s
 }
 
 .footer__social-icon {
@@ -386,7 +409,7 @@
     
 }
 
-.ul {
-    padding-left: 0;
-    list-style: none;
+.footer__column-link:hover {
+    opacity: 1;
+    color: #2F80ED;
 }
