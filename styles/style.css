@@ -341,6 +341,10 @@
     justify-content: space-between;
 }
 
+.footer__column {
+
+}
+
 .footer__column_content_copyright {
     display: flex;
     flex-direction: column;
@@ -351,13 +355,13 @@
 .footer__column_content_info {
     display: flex;
     flex-direction: column;
-    width: auto;
+    
 }
 
 .footer__column_content_social {
     display: flex;
     flex-direction: column;
-    width: auto;
+    
 
 }
 
