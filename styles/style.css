@@ -272,21 +272,13 @@
 .section-title_theme_dark {
     text-align: center;
     margin: 90px auto auto;
-    width: 60%;
-    line-height: 69px;
-    font-size: 60px;
-    font-weight: bolder;
     color: white;
     
 }
 
 .section-subtitle_theme_dark {
     text-align: center;
-    width: 60%;
     margin: 20px auto auto;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
     color: white;
 }
 
@@ -311,7 +303,6 @@
 }
 
 .table__text_theme_dark {
-    margin-top: 20px;
     color: white;
 }
 
@@ -342,26 +333,20 @@
 }
 
 .footer__column {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__column_content_copyright {
-    display: flex;
-    flex-direction: column;
     flex-basis: 711px;
     justify-content: space-between;
 }
 
 .footer__column_content_info {
-    display: flex;
-    flex-direction: column;
-    
+
 }
 
 .footer__column_content_social {
-    display: flex;
-    flex-direction: column;
-    
 
 }
 
