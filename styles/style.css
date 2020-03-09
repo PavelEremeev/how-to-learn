@@ -1,6 +1,15 @@
-/* * {
+@keyframes rotation {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(345deg);
+    }
+}
+
+* {
     border: 1px solid red;
-} границы для удобства разметки */
+} 
 
 .page {
     min-width: 1100px;
@@ -35,6 +44,7 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    overflow: hidden;
     /* выше установили ограничения для секции */
 }
 
@@ -95,11 +105,62 @@
     height: 568px;
     width: 568px;
     z-index: 0;
+    animation: rotation 20s linear infinite;
+    transform: rotate(-15deg);
 }
 
 .description {
     margin-top: 100px;
     display: flex;
+}
+
+.technics {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cards {
+    width: 920px;
+    display: grid;
+    grid-column-gap: 100px;
+    grid-template-columns: repeat(auto-fill, 240px);
+
+}
+
+.cards__item {
+    width: 240px;
+    text-align: center;
+
+}
+
+.cards__image {
+    margin: 60px 40px 43px;
+    border-radius: 160px;
+    width: 160px;
+    height: 160px; 
+}
+
+.cards__title {
+    color: #000000 ;
+    font-weight: bolder;
+    line-height: 1.15;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cards__description {
+    color: #000000 ;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .two-columns {
