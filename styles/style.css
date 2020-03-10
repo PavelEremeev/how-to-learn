@@ -1,4 +1,4 @@
-@keyframes rotation {
+@keyframes rotation_square {
     from {
         transform: rotate(-15deg);
     }
@@ -7,9 +7,18 @@
     }
 }
 
-* {
-    border: 1px solid red;
-} 
+@keyframes rotation_triangle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* * {
+    border: 1px solid red; 
+}   */ 
 
 .page {
     min-width: 1100px;
@@ -80,8 +89,7 @@
 }
 
 .header__link:hover {
-    opacity: 1;
-    color: #000000;
+    opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -105,7 +113,7 @@
     height: 568px;
     width: 568px;
     z-index: 0;
-    animation: rotation 20s linear infinite;
+    animation: rotation_square 20s linear infinite;
     transform: rotate(-15deg);
 }
 
@@ -274,8 +282,14 @@
     line-height: 42px;
     max-height: 42px;
     margin-top: 68px;
-
+    transition: all linear .3s
 }
+
+.khan__buy-link:hover {
+    opacity: 0.5;
+    
+}
+
 
 .two-columns {
     display: flex;
@@ -339,8 +353,7 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin: 20px auto 0;
     color: #000000;
     line-height: 34px;
     font-size: 24px;
@@ -417,8 +430,7 @@
 
 
 .feinman__link:hover {
-    opacity: 1;
-    color: #2F80ED;
+    opacity: 0.5;
 }
 
 .feinman {
@@ -448,6 +460,8 @@
     text-align: center;
     margin: 90px auto auto;
     color: white;
+    position: relative;
+    z-index: 6;
     
 }
 
@@ -455,6 +469,8 @@
     text-align: center;
     margin: 20px auto auto;
     color: white;
+    position: relative;
+    z-index: 6;
 }
 
 .table_theme_dark {
@@ -490,6 +506,34 @@
     height: 877px;
     background-size: contain;
     background-image: url(../images/triangle.svg);
+    animation: rotation_triangle 20s linear infinite;
+}
+
+.resources {
+    margin-top: 100px;
+}
+
+.resources__logo-zone {
+    margin: 80px auto 217px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.resources__logo {
+    margin: 0;
+    width: 270px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    transition: all linear .3s;
+    opacity: 1;
+    
+    
+}
+
+.resources__logo:hover {
+    opacity: 0.5;
 }
 
 .footer {
@@ -574,6 +618,6 @@
 }
 
 .footer__column-link:hover {
-    opacity: 1;
-    color: #2F80ED;
+    opacity: 0.5;
+    
 }
