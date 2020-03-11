@@ -1,0 +1,14 @@
+@import url(../../rotation/rotation.css);
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+    position: absolute;
+    right: 0px;
+    top: 64px;
+    background-color: #2F80ED;
+    height: 568px;
+    width: 568px;
+    z-index: 0;
+    animation: rotation_square 20s linear infinite;
+    transform: rotate(-15deg);
+}
