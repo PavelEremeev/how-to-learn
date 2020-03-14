@@ -11,4 +11,4 @@ Making by me on course - Yandex.Praktikum. This is my first steps on HTML+CSS.
 0) More animations and interactive objects.
 1) Simple and minimalistic design.
 2) Fast working site for more devices.
-3) Etc.
+3) JS
