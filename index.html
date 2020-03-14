@@ -69,8 +69,8 @@
             <h2 class="section-title">Видео на TED</h2>
             <p class="section-subtitle">Для тех кто любит прокрастинировать</p>
             <div class="video__iframes">
-            <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section class="oakley">
@@ -135,7 +135,7 @@
         </section>
         <section class="khan">
             <div class="khan__container">
-                <h3 class="khan__author">Салман Хан</h3>
+                <p class="khan__author">Салман Хан</p>
                 <h2 class="khan__title">Весь мир — школа</h2>
                 <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
                     Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
@@ -201,21 +201,20 @@
         <section class="resources">
             <h3 class="section-title">Полезные ресурсы</h3>
             <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-            <nav class="resources__logo-zone">
-                <a href="https://arzamas.academy/" class="resources__logo" target="_blank" lang="ru"><img
-                    src="./images/arzamas.svg" alt="Логотип академии Арзамас"/></a>
-                <a href="https://nplus1.ru/" class="resources__logo" target="_blank" lang="ru"><img
-                    src="./images/n1.svg" alt="Логотип портала N+1"/></a>   
-                <a href="https://strelka.com/" class="resources__logo" target="_blank" lang="ru"><img
-                    src="./images/strelka.svg" alt="Логотип портала Стрелка"/></a> 
-                <a href="https://polka.academy/" class="resources__logo" target="_blank" lang="ru"><img
-                    src="./images/polka.svg" alt="Логотип академии Полка"/></a> 
-            </nav>
+            <ul class="resources__logo-zone">
+                <li><a href="https://arzamas.academy/" target="_blank" lang="ru"><img 
+                    class="resources__logo"   src="./images/arzamas.svg" alt="Логотип академии Арзамас"/></a></li>
+                <li><a href="https://nplus1.ru/" target="_blank" lang="ru"><img
+                    class="resources__logo" src="./images/n1.svg" alt="Логотип портала N+1"/></a></li>  
+                <li><a href="https://strelka.com/" target="_blank" lang="ru"><img
+                    class="resources__logo" src="./images/strelka.svg" alt="Логотип портала Стрелка"/></a></li>
+                <li><a href="https://polka.academy/" target="_blank" lang="ru"><img
+                    class="resources__logo" src="./images/polka.svg" alt="Логотип академии Полка"/></a></li> 
+                </ul>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__columns">
-            <!-- наверное в брифе опечатка, ибо для перфекционного БЭМ должно быть footer__column -->
             <div class="footer__column footer__column_content_copyright">
                 <img class="logo logo_place_footer" src="./images/logo_white.svg" alt="Логотип-Яндекс-Практикум"/>
                 <p class="footer__author"> &copy;2020. Pavel Eremeev</p>

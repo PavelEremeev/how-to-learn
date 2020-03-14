@@ -4,4 +4,6 @@
     max-width: 1100px;
     display: flex;
     flex-direction: row;
+    padding-left: 0;
+    list-style: none;
 }

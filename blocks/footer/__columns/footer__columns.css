@@ -1,8 +1,10 @@
 
 .footer__columns {
-    margin: auto; 
+    margin: 0 auto; 
     max-width: 90%;
+    min-height: 250px; /* при размерах родителя в 350рх я так понимаю оптимальным будет 250рх? */
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
+    padding-bottom: 40px;
 }
